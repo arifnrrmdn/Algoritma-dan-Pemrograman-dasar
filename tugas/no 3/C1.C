@@ -4,6 +4,7 @@
 #define HML 2000
 void main()
 {
+ /*deklarasi*/
  int JBB, JML;
  float Bayar,Total;
 
