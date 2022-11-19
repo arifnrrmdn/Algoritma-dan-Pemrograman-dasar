@@ -10,10 +10,10 @@ main()
     scanf("%d",&angka);
 
     if(angka%2==1){
-        printf("Angka adalah GANJIL");
+        printf("\nAngka adalah GANJIL");
     }
     if(angka%2==0){
-        printf("Angka adalah GENAP");
+        printf("\nAngka adalah GENAP");
     }
 
     getch();

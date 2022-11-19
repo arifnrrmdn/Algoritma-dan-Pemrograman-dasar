@@ -7,7 +7,7 @@ main()
 
     system("cls");
     printf("Menghitung panjang dan lebar persegi panjang");
-    printf("\n\npanjang persegi panjang : ");
+    printf("\npanjang persegi panjang : ");
     scanf("%d",&panjang);
     printf("lebar persegi panjang : ");
     scanf("%d",&lebar);
