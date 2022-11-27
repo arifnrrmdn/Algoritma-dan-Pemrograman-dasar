@@ -1,42 +1,27 @@
-#include <stdio.h>
-#include <conio.h>
-#include <stdlib.h>
-main()
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+
+int main()
 {
-    int i,j,jml,p;
-    system("cls");
+    int jam_masuk,jam_keluar,lama;
+    char ulang;
 
-    for(i=1;i<=10;i=i+2)
-    {
-	    for(j=10,jml=0,p=3;j>=i;j=j-2)
-        {
-            p--;
-            if(p<=1){
-                printf("+");
-            }
-            printf("%d",j);
-            jml += j;
+    do{
+        system("cls");
+        printf("Jam masuk = "); scanf("%d",&jam_masuk);
+        printf("Jam keluar = "); scanf("%d",&jam_keluar);
+
+        if(jam_keluar >= jam_masuk){
+            lama = jam_keluar - jam_masuk;
+        }else{
+            lama = (12 - jam_masuk) + jam_keluar;
         }
-        printf("=%d\n",jml);
-    }
 
-    printf("\n");
+        printf("Lama bekerja %d jam", lama);
 
-    for(i=1;i<=10;i=i+2)
-    {
-	    for(j=1,jml=1,p=3;j<=i;j=j+2)
-        {
-            p--;
-            if(p<=1){
-                printf("*");
-            }
-            printf("%d",j);
-            jml *= j;
-        }
-        printf("=%d",jml);
-        printf("\n");
-    }
+        printf("\nTambah data lagi? y/n = "); scanf("%s",&ulang); fflush(stdin);
+
+    }while (ulang == 'y' || ulang == 'Y');
     
-    getch();
-    return 0;
 }
